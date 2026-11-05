@@ -26,7 +26,7 @@ Zavřením okna se aplikace skryje do lišty (Windows) / do menu (macOS). Ukonč
 
 ## Sestavení instalátorů
 - **Windows**: dvakrát klikněte na `build_installer.bat` (doinstaluje Python a Inno Setup přes winget) > `Output\RecLight-2.0-Windows-Setup.exe`.
-- **macOS**: na Macu `./build_mac.sh` > `dist/RecLight-2.0-macOS-<arch>.dmg`.
+- **macOS**: na Macu `bash build_mac.sh` > `dist/RecLight-2.0-macOS-<arch>.dmg`.
 - **Obojí najednou**: GitHub Actions (`.github/workflows/release.yml`) sestaví Windows `.exe`, oba `.dmg` a zip s firmwarem; po push značky `v2.0` je vystaví v Releases.
 
 ## ESP světlo

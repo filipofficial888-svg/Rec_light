@@ -1,6 +1,6 @@
 #!/bin/bash
 # RecLight - sestavení aplikace a instalačního obrazu (.dmg) pro macOS.
-# Spusťte na Macu v terminálu:  ./build_mac.sh      (potřebuje Python 3.11+ s Tk, např. z python.org nebo "brew install python-tk")
+# Spusťte na Macu v terminálu:  bash build_mac.sh      (potřebuje Python 3.11+ s Tk, např. z python.org nebo "brew install python-tk")
 # Výsledek: dist/RecLight-<verze>-macOS-<arch>.dmg
 set -euo pipefail
 cd "$(dirname "$0")"
