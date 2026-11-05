@@ -1,0 +1,17 @@
+RecLight pro macOS - instalace
+==============================
+
+1. Přetáhněte RecLight.app do složky Aplikace (Applications).
+2. První spuštění: aplikace není podepsaná u Applu, proto ji otevřete pravým tlačítkem > Otevřít > Otevřít.
+   (Případně v Terminálu: xattr -dr com.apple.quarantine /Applications/RecLight.app)
+3. V okně RecLight v Nastavení zapněte "Spustit se systémem". RecLight se pak spouští sám po přihlášení.
+
+MIDI port: na macOS se žádný ovladač neinstaluje. RecLight sám vytvoří virtuální MIDI port "RecLight".
+Studio One:  Možnosti > Externí zařízení > Přidat > Mackie Control, Send To = RecLight.
+Cubase:      Studio > Nastavení studia > + > Mackie Control, MIDI Input a Output = RecLight.
+Nastavení DAW se dělá jen jednou. Stav spojení uvidíte v záložce DAW.
+
+ESP světlo: připojte ESP32 přes USB. Čipy CP210x a CH340 mohou na starších macOS potřebovat ovladač výrobce
+(ESP32-C3 s USB-C ovladač nepotřebuje). Zařízení vyberete v Nastavení (podle VID:PID).
+
+Složka Firmware obsahuje programy pro ESP32 / ESP32-C3 (Arduino IDE).
