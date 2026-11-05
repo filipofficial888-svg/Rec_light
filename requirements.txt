@@ -1,0 +1,8 @@
+mido
+python-rtmidi
+pyserial
+pystray
+pillow
+customtkinter
+pyinstaller
+pyobjc-framework-Cocoa; sys_platform == "darwin"
