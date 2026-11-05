@@ -41,7 +41,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Sestavení .dmg
-        run: ./build_mac.sh
+        run: bash build_mac.sh
       - uses: actions/upload-artifact@v4
         with:
           name: RecLight-macOS-${{ matrix.os }}
